@@ -57,7 +57,7 @@ function uploadWholeEml() {
 }
 
 function spamEmail(event) {
-  var a = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=fdbb3010-2e84-4073-8b95-712c5861f36a&response_type=token&redirect_uri=https://localhost:3000/assets/Redirect.html&scope=user.read%20mail.readwrite%20mail.send&response_mode=fragment&state=12345&nonce=678910";
+  var a = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=fdbb3010-2e84-4073-8b95-712c5861f36a&response_type=token&redirect_uri=https://junaid042.github.io/Outlook-add-in/assets/Redirect.html&scope=user.read%20mail.readwrite%20mail.send&response_mode=fragment&state=12345&nonce=678910";
   Office.context.ui.displayDialogAsync(a, {  height: 60, width: 40 }, function (asyncResult) {
     Logindialog = asyncResult.value;
     Logindialog.addEventHandler(Office.EventType.DialogMessageReceived, function (arg) {
